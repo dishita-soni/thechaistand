@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "thechaistand",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
