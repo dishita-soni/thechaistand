@@ -14,10 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "The Chai Stand",
-  description: "HGR updates - formally documented",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  description: "HGR updates - formally documented"
 };
 
 export default function RootLayout({
@@ -26,12 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <body>
+    <header style={{ padding: 20 }}>
+        <h1>The Chai Stand</h1>
+    </header>
+
+    <main>{children}</main>
+
+    <footer style={{ padding: 20 }}>
+        © 2026 The Chai Stand
+    </footer>
+    </body>
   );
 }
