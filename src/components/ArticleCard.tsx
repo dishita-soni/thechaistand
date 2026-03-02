@@ -28,16 +28,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ title, author, body, category
         <div className={`article-badge article-badge--${category}`}>
           {CATEGORY_LABELS[category] ?? category}
         </div>
-
-        {imageUrl ? (
-          <img
-            src={imageUrl}
-            alt={title}
-            className="article-img"
-          />
-        ) : (
-          <div className="article-img-placeholder" />
-        )}
+        
+        <div className="article-img-placeholder" />
 
         <h1 className="article-title">{title}</h1>
 

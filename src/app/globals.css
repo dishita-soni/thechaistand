@@ -332,12 +332,6 @@ a {
   overflow: hidden;
 }
 
-.article-thumb-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .article-back-wrap {
   max-width: 480px;
   margin: 0 auto;
@@ -442,13 +436,6 @@ a {
   color: #F5E6D8;
 }
 
-.article-img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 20px;
-}
 
 .article-img-placeholder {
   width: 100%;
@@ -511,6 +498,92 @@ footer {
   border-top: 1.5px solid #DE8E4E;
 }
 
+.admin-main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 16px 80px;
+}
+
+.admin-title {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #7A3F15;
+  margin-bottom: 28px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #AB5F2D;
+  opacity: 0.7;
+}
+
+.admin-input {
+  background: #F5E6D8;
+  border: 2px solid #DE8E4E;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 0.95rem;
+  color: #7A3F15;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  appearance: none;
+}
+
+.admin-input:focus {
+  border-color: #7A3F15;
+}
+
+.admin-textarea {
+  resize: vertical;
+  min-height: 200px;
+  line-height: 1.6;
+}
+
+.admin-file {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background: #AB5F2D;
+  color: #F5E6D8;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.admin-btn:hover:not(:disabled) { background: #7A3F15; }
+.admin-btn:active:not(:disabled) { transform: scale(0.98); }
+.admin-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.admin-error { color: #c0392b; font-size: 0.85rem; }
+.admin-success { color: #2e7d32; font-size: 0.85rem; }
+
+@media (min-width: 768px) {
+  .admin-main { max-width: 640px; padding: 48px 24px 100px; }
+}
 
 @media (min-width: 768px) {
   .home-main {

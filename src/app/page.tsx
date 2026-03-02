@@ -101,12 +101,8 @@ export default function HomePage() {
         {filtered.map((article) => (
           <Link key={article.id} href={`/article?id=${article.id}`} className="article-row-link">
             <div className="article-row">
-            <div className="article-row-thumb">
-            {article.imageUrl ? (
-                <img src={article.imageUrl} alt={article.title} className="article-thumb-img" />
-            ) : null}
-            </div>              
-            <div className="article-row-info">
+              <div className="article-row-thumb" />            
+              <div className="article-row-info">
                 <div className="article-row-author">{article.author}</div>
                 <div className="article-row-title">{article.title}</div>
                 <div className="article-row-date">{formatDate(article.publishedAt)}</div>
